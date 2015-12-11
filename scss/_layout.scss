@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+.main-header{
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  p{
+    text-align: center;
+    color: white;
+  }
+  h2{
+    text-align: center;
+    color:white;
+  }
+}
+.logo{
+  text-align: center;
+}
+
+
+.menu-icons {
+  text-align: center;
+  a {
+    background-image:url('../img/bha.png');
+    display:block;
+    width: 180px;
+    height:180px;
+    padding-top: 120px;
+    position: relative;
+    color:white;
+    text-decoration:none;
+    &::before {
+      background-image: url('../img/menu-icons.png');
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 65px;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      margin-left: -32px;
+      width: 65px;
+    }
+  }
+
+}
+.pic1 {
+  &::before {
+    background-position: 0 -132px;
+  }
+}
+.pic2 {
+  &::before {
+    background-position: 0 -199px;
+  }
+}
+.pic3 {
+  &::before {
+    background-position: 0 -2px;
+  }
+}
+.pic4 {
+  &::before {
+    background-position: 0 -70px;
+  }
+}
+.pic5 {
+  &::before {
+    background-position: 0 -260px;
+  }
+}
+.pic6 {
+  &::before {
+    background-position: 0 -326px;
+  }
+}
+.arrow2{
+   margin-left:66px;
+  margin-bottom: 80px;
+}
+.logo2{
+  margin-left: 128px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  float:left;
+}
+.navigation {
+  margin-top: 36px;
+  float:right;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  li{
+    color: #000;
+    display:inline-block;
+    padding:10px;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
+}
+.decor{
+    color:rgb(159,68, 155);
+  }
+  .secondary-section {
+    background-color: rgb(238,238,238);
+    padding-top:100px;
+    padding-bottom: 150px ;
+  }
+  .features {
+
+    h3 {
+      &::before {
+        background-image:url('../img/icons-sprite.png');
+        content: "";
+        display: block;
+        margin: 0 auto 10px;
+        height: 190px;
+        width: 200px;
+        margin-top: 90px;
+      }
+    }
+
+    h3, p {
+      text-align: center;
+      padding: 0 2px;
+    }
+  }
+
+  .icon1{
+    &::before {
+      background-position: 0 -7px;
+    }
+  }
+  .icon2{
+    &::before {
+      background-position: 0 -207px;
+    }
+  }
+  .icon3{
+    &::before {
+      background-position: 0 -404px;
+    }
+  }
+  .icon4{
+    &::before {
+      background-position: 0 -605px;
+    }
+  }
+  .content-about-text {
+    text-align: center;
+    h2 {
+      display: inline-block;
+      position: relative;
+      &::before {
+        position: absolute;
+        display: block;
+        bottom: -4px;
+        left: -20px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: solid rgb(159,68, 155);
+        border-width: 0 0 1px 1px;
+      }
+      &::after{
+        position: absolute;
+        display: block;
+        top: -7px;
+        right: -10px;
+        content: '';
+        width:  20px;
+        height:  20px;
+        border: solid rgb(159,68, 155);
+        border-width: 1px 1px 0 0 ;
+
+      }
+    }
+  }
+  .content-about {
+    margin-bottom: 100px;
+  }
+  .content-about-text h2
+  {
+    text-align:center;
+    color:grey;
+    font-family: Lato, sans-serif;
+    letter-spacing:2px;
+    font-size:45px;
+    margin: 20px  0;
+  }
+  .content-about-text small
+  {
+    color:rgb(159,68, 155);
+    font-size:45px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .content-about-grid-left img
+  {
+    width:100%;
+  }
+  .content-about-grid-right {
+    padding-left:31px;
+  }
+  .content-about-grid-right p
+  {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: darkgrey;
+    line-height: 33px;
+    width: 92%;
+    padding-left:20px;
+  }
+  .learn
+  {
+    margin-top: 17%;
+    padding-left:20px;
+  }
+  .learn a
+  {
+    background: rgb(159,68, 155);
+    border-bottom: solid 5px rgb(159,68, 155);
+    border-radius: 7px;
+    padding:1em 3em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color:white;
+  }
+  .learn a:hover
+  {
+    color:rgb(159,68, 155);
+    text-decoration:none;
+    background: transparent;
+    border: solid 2px rgb(159,68, 155);
+    border-top: solid 5px rgb(159,68, 155);
+    border-radius: 10px;
+    padding:1em 3em;
+  }
+
+  .content-about-bottom-text
+  {
+    text-align:center;
+    padding: 20px 0;
+
+  }
+  .content-about-bottom-text p
+  {
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
+    color: white;
+    font-weight: 300;
+    margin:10px 0 0 0;
+  }
+  .hat-back{
+    background-image:url('../img/section-bg.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .hat-back h2{
+    padding-top: 130px;
+    background: url('../img/icoEdu.png') no-repeat top center;
+    color:white;
+    font-family: 'Lato', sans-serif;
+  }
+  .row-arrow{
+    text-align:center;
+  }
+  .left-arrow{
+    background: url('../img/arr-l.png') no-repeat;
+    height: 120px;
+    width: 105px;
+    margin-right:3px;
+    display: inline-block;
+  }
+  .right-arrow{
+    background:url('../img/arr-r.png') no-repeat ;
+    height: 120px;
+    width: 105px;
+    margin-left:10px;
+    display: inline-block;
+  }
+  .member{
+    display: block;
+  }
+  .our-team{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .team {
+    position: relative;
+    width: 3580px;
+    li {
+      margin:0 40px;
+      display:inline-block;
+      float: left;
+      text-align: center;
+    }
+  }
+  .circle{
+    height: 280px;
+    width: 280px;
+    background-color:lightslategrey ;
+    border: 3px solid lightslategrey;
+    border-radius: 50%;
+  }
+
+  .social-f {
+    margin:0 10px 0 0;
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/f.png');
+    background-size: 30px 30px;
+  }
+  .social-g {
+    text-align: center;
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/g.png');
+    background-size: 30px 30px;
+  }
+.progress-bar{
+  height: 15px;
+  background: rgb(159,68, 155) ;
+}
+.progress-wrap{
+  width: 300px;
+  height: 15px;
+  background: lightgrey;
+}
+.webpercent{
+  width: 300px;
+}
+.percent {
+  display: inline-block;
+  float: right;
+}
+.web{
+  display:inline-block;
+}
+
+
