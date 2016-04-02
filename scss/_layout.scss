@@ -21,31 +21,132 @@ body {
   text-align: center;
 }
 
+.main-container-home
+{
+	background:url('../img/hero-bg.jpg');
+	background-size:cover;
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom:50px;
+	h1, h3, h5
+	{
+		color:white;
+	}
+}
+
+
+.container
+{
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+
+.nav-icons {
+	list-style: none;
+	padding: 0;
+	a {
+		background:url('../img/bha.png') no-repeat top center;
+		background-size: contain;
+		display:block;
+		position:relative;
+		padding: 125px 0 0;
+		height: 180px;
+		color:white;
+		text-decoration:none;
+		width: 100%;
+		position:relative;
+
+
+
+		&:hover {
+			background-image: url('../img/portbg.png');
+		}
+
+		&::before{
+
+			content:"";
+			display:block;
+			background:url('../img/icons-menu2.png');
+			width:67px;
+			height:67px;
+			background-position: 4px 3px;
+			position:absolute;
+			margin-left:-36px;
+			left:50%;
+			top:25px;
+		}
+
+		&.icon-Ser::before {
+			background-position:2px -130px;
+		}
+		&.icon-Por::before{
+			background-position:4px 208px;
+		}
+		&.icon-Abo::before{
+			background-position:4px 0;
+		}
+		&.icon-Tea::before{
+			background-position:2px -66px;
+		}
+		&.icon-Blo::before{
+			background-position:0 -262px;
+		}
+		&.icon-Kon::before{
+			background-position:0 -326px
+		}
+	}
+}
 
 .menu-icons {
   text-align: center;
-  a {
-    background-image:url('../img/bha.png');
+  &::before{
+    content:"";
     display:block;
-    width: 180px;
-    height:180px;
-    padding-top: 120px;
-    position: relative;
-    color:white;
-    text-decoration:none;
-    &::before {
-      background-image: url('../img/menu-icons.png');
-      background-repeat: no-repeat;
-      content: '';
-      display: block;
-      height: 65px;
-      position: absolute;
-      top: 40px;
-      left: 50%;
-      margin-left: -32px;
-      width: 65px;
-    }
+    background-image:url('../img/icons-sprite.png');
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    margin-left:-100px;
+    left:50%;
+    top:20px;
   }
+
+  &.icon-build::before {
+    background-position: 0 0;
+  }
+    &:hover{
+      &::before{
+        background-image:url('../img/icons-sprite-hover.png');
+      }
+    }
+
+  &.icon-clean::before{
+    background-position:0 -200px;
+  }
+    &:hover{
+      &::before{
+        background-image:url('../img/icons-sprite-hover.png');
+      }
+    }
+
+  &.icon-easy::before{
+    background-position:0 -400px;
+  }
+    &:hover{
+      &::before{
+        background-image:url('../img/icons-sprite-hover.png');
+      }
+    }
+
+  &.icon-fully::before{
+    background-position:0 -600px;
+  }
+    &:hover{
+      &::before{
+        background-image:url('../img/icons-sprite-hover.png');
+      }
+    }
 
 }
 .pic1 {
@@ -78,8 +179,11 @@ body {
     background-position: 0 -326px;
   }
 }
+.menu-icons a:hover{
+  background-color: rgb(159,68, 155);
+  overflow: hidden;
+}
 .arrow2{
-   margin-left:66px;
   margin-bottom: 80px;
 }
 .logo2{
@@ -88,28 +192,109 @@ body {
   margin-bottom: 30px;
   float:left;
 }
-.navigation {
-  margin-top: 36px;
-  float:right;
-  margin-right: 100px;
-  margin-bottom: 30px;
-  li{
-    color: #000;
-    display:inline-block;
-    padding:10px;
-  }
-  a{
-    text-decoration:none;
-    color:black;
+nav{
+	img{
+		float:left;
+		margin:10px 0 10px 0;
+	}
+	ul{
+		float:right;
+	}
+	li{
+		display:inline-block;
+		margin:10px 10px 10px 0;
+	}
+	a{
+		text-decoration: none;
+		color:black;
+		&:hover{
+			color:purple;
+		}
+	}
+}
+
+#sticky{
+	width:100%;
+  .container {
+    padding-bottom: 0;
   }
 }
-.decor{
+.stick{
+		position:fixed;
+		top:0;
+		z-index:1;
+		width:100%;
+		border-radius:0 0 10px 10px;
+		background-color:white;
+		border-bottom: 2px solid black;
+}.decor{
     color:rgb(159,68, 155);
   }
   .secondary-section {
     background-color: rgb(238,238,238);
     padding-top:100px;
     padding-bottom: 150px ;
+    li{
+      list-style:none;
+    }
+    h3{
+      text-align: center;
+    }
+    a{
+      display:block;
+      position:relative;
+      padding:110px 0 100px 0;
+        text-decoration:none;
+
+
+      &::before{
+        content:"";
+        display:block;
+        background-image:url('../img/icons-sprite.png');
+        width: 200px;
+        height: 200px;
+        position:absolute;
+        margin-left:-100px;
+        left:50%;
+        top:20px;
+      }
+
+      &.icon-build::before {
+        background-position: 0 0;
+      }
+        &:hover{
+          &::before{
+            background-image:url('../img/icons-sprite-hover.png');
+          }
+        }
+
+      &.icon-clean::before{
+        background-position:0 -200px;
+      }
+        &:hover{
+          &::before{
+            background-image:url('../img/icons-sprite-hover.png');
+          }
+        }
+
+      &.icon-easy::before{
+        background-position:0 -400px;
+      }
+        &:hover{
+          &::before{
+            background-image:url('../img/icons-sprite-hover.png');
+          }
+        }
+
+      &.icon-fully::before{
+        background-position:0 -600px;
+      }
+        &:hover{
+          &::before{
+            background-image:url('../img/icons-sprite-hover.png');
+          }
+        }
+    }
   }
   .features {
 
@@ -153,6 +338,7 @@ body {
   }
   .content-about-text {
     text-align: center;
+    margin: 50px 0;
     h2 {
       display: inline-block;
       position: relative;
@@ -218,11 +404,12 @@ body {
   }
   .learn
   {
-    margin-top: 17%;
+    margin-top: 2%;
     padding-left:20px;
   }
   .learn a
   {
+    display: inline-block;
     background: rgb(159,68, 155);
     border-bottom: solid 5px rgb(159,68, 155);
     border-radius: 7px;
@@ -305,12 +492,27 @@ body {
     }
   }
   .circle{
-    height: 280px;
-    width: 280px;
-    background-color:lightslategrey ;
+    height: 232px;
+    width: 232px;
     border: 3px solid lightslategrey;
     border-radius: 50%;
   }
+  .circle1, .circle5, .circle9 {
+    background-image: url('../img/images_team1.jpg');
+  }
+
+  .circle2, .circle6 {
+    background-image: url('../img/images_team2.jpg');
+  }
+
+  .circle3, .circle7 {
+    background-image: url('../img/images_team3.jpg');
+  }
+
+  .circle4, .circle8 {
+    background-image: url('../img/images_team3.jpg');
+  }
+
 
   .social-f {
     margin:0 10px 0 0;
@@ -348,4 +550,478 @@ body {
   display:inline-block;
 }
 
+.container {
+  position: relative;
+  padding-bottom: 50px;
+}
+.container365{
+	background-color:red;
+	text-align:center;
+	padding-top:80px;
+	position: relative;
 
+	li{
+	list-style:none;
+	}
+	p{
+		font-size: 70px;
+		margin:0;
+	}
+
+}
+
+.section-6 {
+  background: url("../img/section-bg.jpg") 100% 100%;
+  margin-top: 100px; }
+  .section-6 img {
+    margin-top: 100px; }
+  .section-6 p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 100px; }
+  .section-6 .row {
+    text-align: center; }
+.section-7 {
+  background-color: #DCDCDC;
+  text-align: center;
+  padding-top: 80px;
+  position: relative; }
+  .section-7 li {
+    list-style: none; }
+  .section-7 p {
+    font-size: 70px;
+    margin: 0; }
+.section-8 {
+  background-color: #DCDCDC;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  position: relative; }
+  .section-8 .kolo6 {
+    background: url("../img/n2.jpg"); }
+  .section-8 .kolo7 {
+    background: url("../img/n3.jpg"); }
+  .section-8 .kolo8 {
+    background: url("../img/n4.jpg"); }
+  .section-8 .kolo9 {
+    background: url("../img/n5.jpg"); }
+  .section-8 .kolo10 {
+    background: url("../img/n1.jpg"); }
+
+.section9 {
+  text-align: center; }
+  .section9 .button-sec-9 {
+    display: inline-block;
+    width: 70px;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    margin-bottom: 50px; }
+    .section9 .button-sec-9:hover {
+      background-color: purple; }
+
+.button-container {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.plus {
+  position: relative;
+  display: inline-block; }
+  .plus img {
+    display: block; }
+  .plus:hover:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url("../img/plus.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+
+.contact {
+  margin-top: 100px; }
+  .contact .left-box {
+    width: 50%;
+    float: left;
+    padding-bottom: 50px; }
+    .contact .left-box .name, .contact .left-box .email {
+      display: block;
+      width: 90%;
+      height: 50px;
+      margin: 10px 0 10px 0;
+      padding-left: 20px;
+      border: 2px solid black;
+      outline: none; }
+      .contact .left-box .name:hover, .contact .left-box .email:hover {
+        border: 2px solid purple; }
+    .contact .left-box textarea {
+      width: 90%;
+      padding-left: 20px;
+      padding-top: 20px;
+      border: 2px solid black;
+      outline: none; }
+      .contact .left-box textarea:hover {
+        border: 2px solid purple; }
+  .contact .right-box {
+    float: left;
+    width: 50%;
+    display: block;
+    padding-left: 40px; }
+    .contact .right-box h3 {
+      padding-bottom: 21px; }
+
+.social-icons {
+  text-align: left; }
+  .social-icons .icon-1::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/get-icons.png") no-repeat;
+    width: 55px;
+    height: 55px;
+    background-position: -78px -4px; }
+  .social-icons .icon-1:hover::before {
+    background-position: -79px -64px; }
+  .social-icons .icon-2::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/get-icons.png") no-repeat;
+    width: 53px;
+    height: 53px;
+    background-position: -6px -6px; }
+  .social-icons .icon-2:hover::before {
+    background-position: -7px -66px; }
+  .social-icons .icon-3::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/get-icons.png") no-repeat;
+    width: 53px;
+    height: 53px;
+    background-position: -154px -6px; }
+  .social-icons .icon-3:hover::before {
+    background-position: -155px -66px; }
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center; }
+
+  .section-6{
+  	background:url('../img/section-bg.jpg')100% 100%;
+  	margin-top:100px;
+  	img{
+  		margin-top: 100px;
+  	}
+  	p{
+  		text-align: center;
+  		color: white;
+  		font-size: 30px;
+  		padding-bottom: 100px;
+  	}
+  	.row{
+  		text-align:center;
+  	}
+
+  }
+  .container365 {
+  	background-color:#DCDCDC;
+  	text-align:center;
+  	padding-top:80px;
+  	position: relative;
+
+  	li{
+  	list-style:none;
+  	}
+  	p{
+  		font-size: 70px;
+  		margin:0;
+  	}
+
+  }
+
+  .kolo{
+  	width:200px;
+  	height:200px;
+  	border-radius:50%;
+  	margin:0 auto;
+  }
+
+  .container-blog{
+  	background-color:#DCDCDC;
+  	text-align:center;
+  	padding:50px 0 50px 0;
+  	position: relative;
+  	.kolo6{
+  	background:url('../img/n2.jpg');
+  	}
+  	.kolo7{
+  	background:url('../img/n3.jpg');
+  	}
+  	.kolo8{
+  	background:url('../img/n4.jpg');
+  	}
+  	.kolo9{
+  	background:url('../img/n5.jpg');
+  	}
+  	.kolo10{
+  	background:url('../img/n1.jpg');
+  	}
+  }
+
+  .white_div{
+  		position: absolute;
+  		width: 80%;
+  		height: 30px;
+  		left: 50%;
+  		//margin-left: -40%;
+  		transform: translate(-50%, 0);
+  		background-color:white;
+  		bottom:0;
+  	}
+
+
+    .container-portfolio {
+    	text-align:center;
+
+
+    	.button-sec-9{
+    		display: inline-block;
+    		width: 70px;
+    		border:2px solid black;
+
+    		text-align: center;
+    		color:black;
+    		font-size: 15px;
+    		padding:10px;
+    		border-radius:5px 5px 5px 5px;
+    		text-decoration: none;
+    		margin-bottom: 50px;
+    		&:hover{
+    		background-color:purple;
+    		}
+    	}
+    }
+
+    .button-container{
+    		margin-top: 50px;
+    		margin-bottom: 50px;
+    	}
+
+
+    .plus{
+    	position:relative;
+    	display:inline-block;
+    	img{
+    		display:block;
+    		}
+    		&:hover{
+    			&:before{
+    			position:absolute;
+    			content:"";
+    			display:inline-block;
+    			background-image:url('../img/plus.png');
+    			background-color: rgba(0, 0, 0, 0.3);
+    			background-repeat:no-repeat;
+    			background-position:center center;
+    			display:block;
+    			width: 100%;
+    			height: 100%;
+    			top:0;
+    			left:0px;
+    			width:100%;
+    			height:100%;
+    		}
+    	}
+    }
+
+
+    .contact{
+    	margin-top:100px;
+    	.left-box{
+    		width:50%;
+    		float:left;
+    		padding-bottom:50px;
+    		.name, .email{
+    	 		display: block;
+    	 		width: 90%;
+    	 		height: 50px;
+    	 		margin:10px 0 10px 0;
+    	 		padding-left:20px;
+    	 		border:2px solid black;
+    	 		outline: none;
+    	 		&:hover{
+    			border:2px solid purple;
+    		}
+    		}
+
+    		textarea{
+    			width: 90%;
+    			padding-left:20px;
+    			padding-top:20px;
+    			border:2px solid black;
+    	 		outline: none;
+    			&:hover{
+    				border:2px solid purple;
+    			}
+    		}
+    	 }
+    	.right-box{
+    		float:left;
+    		width:50%;
+    		display:block;
+    		padding-left:40px;
+    		h3{
+    			padding-bottom:21px;
+    		}
+    	}
+    }
+
+    .social-icons{
+    text-align: left;
+
+
+    	.icon-1 {
+
+    		&::before {
+    			content: "";
+    			display: inline-block;
+    			background: url('../img/get-icons.png') no-repeat;
+    			width: 55px;
+    			height: 55px;
+    			background-position: -78px -4px;
+    		}
+    		&:hover {
+    			&::before {
+    				background-position:-79px -64px;
+    			}
+    		}
+    	}
+
+
+
+    	.icon-2 {
+    		&::before {
+    			content: "";
+    			display: inline-block;
+    			background: url('../img/get-icons.png') no-repeat;
+    			width: 53px;
+    			height: 53px;
+    			background-position: -6px -6px;
+    		}
+    		&:hover {
+    			&::before {
+    				background-position: -7px -66px;
+    			}
+    		}
+    	}
+
+
+    	.icon-3 {
+    		&::before {
+    			content: "";
+    			display: inline-block;
+    			background: url('../img/get-icons.png') no-repeat;
+    			width: 53px;
+    			height: 53px;
+    			background-position: -154px -6px;
+    	}
+    	&:hover {
+    			&::before {
+    				background-position:-155px -66px;
+    			}
+    		}
+    	}
+
+    }
+
+
+    .footer{
+    	padding-top:50px;
+    	padding-bottom:70px;
+    	text-align:center;
+    }
+
+
+
+    @media only screen and( max-width: 992px ){
+    	.button-email{
+    		text-align: center;
+    		padding-top:50px;
+    	}
+    	.social-icons{
+    		ul{
+    			margin:0;
+    			padding:0;
+    		}
+    	}
+    	.arrow-section4{
+    		text-align: center;
+    	}
+    	.team-slider{
+    		width: 350px;}
+    	.section1{
+    		li{
+    			display: inline-block;
+    		}
+    	}
+    	.section2{
+    		.button-container{
+    			text-align:center;
+    		}
+    		p{
+    			text-align: center;
+    			margin-bottom:10px;
+    		}
+    	}
+    	.main_container{
+    		font-size: 15px;
+    		img{
+    			width: 300px;
+    		}
+    	}
+    	nav {
+    		.hamburger{
+    			float: right;
+    		}
+    		ul{
+
+    			text-align: center;
+    			width: 100%;
+    		}
+    		li{
+    			display:block;
+    			border-bottom:1px solid black;
+
+    			width:300px;
+    			padding-bottom:10px;
+    			padding-top:10px;
+    			margin:0 auto;
+
+    		}
+    	}
+    }
+
+    @media only screen and (min-width:992px){
+    	.hamburger{
+    		display: inline-block;
+    	}
+    }
+
+    .nav-inside{
+    	display:none;
+    	@media only screen and(min-width:992px){
+    			display: block;
+
+    	}
+
+    }

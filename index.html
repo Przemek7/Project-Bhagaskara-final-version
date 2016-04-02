@@ -4,80 +4,101 @@
     <meta charset="utf-8">
     <title>Bhagaskara</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="Stylesheet" href="js/slider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <link href="js/jquery.bxslider.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <body>
-<header class="main-header">
+<header class="main-header" id="home">
+  <div class="main-container-home" >
     <div class="container">
-        <div class="logo">
-            <img src="img/logo.png"/>
+          <img src="img/logo.png"><br>
+          <h1>Fusce blabaala</h1>
+          <h3>tekst ponizej</h3>
+          <h5>tekst jeszcze nizej</h5>
+
+        <div class="row">
+          <ul class="nav-icons">
+
+            <li class="col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-2">
+              <a href="#services" class="icon-Ser">Services</a>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+              <a href="#portfolio" class="icon-Por">Portfolio</a>
+            </li>
+          </ul>
         </div>
-        <h2>Fusce rutrum pretium lorem sempernulla.</h2>
-        <p>Vestibulum ornare cursus nisl, fermentum tincidunt libero pretium et. Maecenas interdum ligula non
-            <br>fermentum fringilla.</p>
-        <div class="row menu-icons">
-            <div class="col-md-2 col-md-offset-4"><a class="pic1" href="#">Services</a></div>
-            <div class="col-md-2"><a class="pic2" href="#">Portfolio</a></div>
+
+        <div class="row">
+          <ul class="nav-icons">
+            <li class="col-md-2 col-sm-4 col-sm-offset-2 col-md-offset-0">
+              <a href="#about"  class="icon-Abo">About</a>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+              <a href="#team" class="icon-Tea">Team</a>
+            </li>
+
+            <li class="col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-2">
+              <a href="#blog" class="icon-Blo">Blog</a>
+            </li>
+            <li class="col-md-2 col-sm-4">
+              <a href="#kontakt" class="icon-Kon">Kontakt</a>
+            </li>
+
+          </ul>
         </div>
-        <div class="row menu-icons">
-            <div class="col-md-2"><a class="pic3" href="#">About</a></div>
-            <div class="col-md-2"><a class="pic4" href="#">Team</a></div>
-            <div class="col-md-2 col-md-offset-4"><a class="pic5" href="#">Blog</a></div>
-            <div class="col-md-2"><a class="pic6" href="#">Contact</a></div>
-        </div>
-        <div class="col-md-1 col-md-offset-5">
-        <a  href="#"><img class="arrow2" src="img/arr2.png"/></a>
+
+        <div class="row">
+          <a href="#nav" class="home-arrow"></a>
         </div>
     </div>
+  </div>
 </header>
 <section class="clearfix">
-    <div class="logo2">
-        <img src="img/logo2.png"/>
-    </div>
-    <ul class="navigation">
-        <li><a href="#">HOME</a></li>
-        <li><a class="decor" href="#">ABOUT</a></li>
-        <li><a href="#">TEAM</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACT</a></li>
-    </ul>
+  <div id="sticky-anchor"></div>
+
+
+
+      <nav id="sticky">
+      <div class="container">
+        <img src="img/logo2.png">
+        <img src="img/hamburger.png" class="hamburger">
+          <ul class="nav-inside">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLOIO</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#kontakt">KONTAKT</a></li>
+          </ul>
+        </div>
+      </nav>
 </section>
 <section class="secondary-section">
     <div class="container">
-        <div class="row menu-center features">
-            <div class="col-md-3">
-                <h3 class="icon1">Built with love</h3>
-                <p>Fusce facilisis velit libero, nec
-                    dignissim lacus sagittis non.<br>
-                    Sed nec porta ante. Pellentesque
-                    habitant morbi tristique senectus et.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="icon2">Built with love</h3>
-                <p>Fusce facilisis velit libero, nec
-                   dignissim lacus sagittis non.<br>
-                    Sed nec porta ante. Pellentesque
-                    habitant morbi tristique senectus et.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="icon3">Built with love</h3>
-                <p>Fusce facilisis velit libero, nec
-                    dignissim lacus sagittis non.<br>
-                    Sed nec porta ante. Pellentesque
-                    habitant morbi tristique senectus et.</p>
-            </div>
-            <div class="col-md-3">
-                <h3 class="icon4">Built with love</h3>
-                <p>Fusce facilisis velit libero, nec
-                    dignissim lacus sagittis non.<br>
-                    Sed nec porta ante. Pellentesque
-                    habitant morbi tristique senectus et.</p>
-            </div>
-        </div>
-    </div>
+      <ul class="row">
+        <li class="col-md-3 col-sm-6 col-xs-6">
+          <a href="#" class="icon-build"></a>
+          <h3>Build with love</h3>
+        </li>
+
+        <li class="col-md-3 col-sm-6 col-xs-6">
+          <a href="#" class="icon-clean"></a>
+          <h3>Clean and modern</h3>
+        </li>
+
+        <li class="col-md-3 col-sm-6 col-xs-6">
+          <a href="#" class="icon-easy"></a>
+          <h3>Easy to use</h3>
+        </li>
+
+        <li class="col-md-3 col-sm-6 col-xs-6">
+          <a href="#" class="icon-fully"></a>
+          <h3>Fully Responsive</h3>
+        </li>
+      </ul>    </div>
 </section>
 <div id="about" class="content-about">
     <div class="container">
@@ -107,7 +128,7 @@
 
     <h2>We lorem and Ipsum your aliquam.</h2>
 </div>
-<section class="container">
+<section class="container" id="team">
         <div class="content-about-text" >
             <h2>Our <small> team</small></h2>
         </div>
@@ -118,7 +139,7 @@
         <div class="our-team">
             <ul class="team">
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle1"></div>
                         <div class="member">
                              <h3>ANNE HATAWAY</h3>
                              <p>CEO / Marketing guru
@@ -130,7 +151,7 @@
                         </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle2"></div>
                     <div class="member">
                         <h3>MARCIN MARCIN</h3>
                         <p>CEO / Marketing guru
@@ -142,7 +163,7 @@
                     </div>
                  </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle3"></div>
                     <div class="member">
                         <h3>OLA OLA</h3>
                         <p>CEO / Marketing guru
@@ -154,7 +175,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle4"></div>
                     <div class="member">
                         <h3>KASIA KASIA</h3>
                         <p>CEO / Marketing guru
@@ -166,7 +187,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle5"></div>
                     <div class="member">
                         <h3>ASIA ASIAY</h3>
                         <p>CEO / Marketing guru
@@ -178,7 +199,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle6"></div>
                     <div class="member">
                         <h3>ADAM ADAM</h3>
                         <p>CEO / Marketing guru
@@ -190,7 +211,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle7"></div>
                     <div class="member">
                         <h3>PAWEL PAWEL</h3>
                         <p>CEO / Marketing guru
@@ -202,7 +223,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle8"></div>
                     <div class="member">
                         <h3>PIOTREK PIOTREK</h3>
                         <p>CEO / Marketing guru
@@ -214,7 +235,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="circle"></div>
+                    <div class="circle circle9"></div>
                     <div class="member">
                         <h3>ZDENEK SMETANA</h3>
                         <p>CEO / Marketing guru
@@ -228,7 +249,7 @@
             </ul>
         </div>
 </section>
-<section class="skills">
+<section class="skills" id="services">
     <div class="content-about-text" >
         <h2>Our <small> skills</small></h2>
     </div>
@@ -275,6 +296,198 @@
       </div>
     </div>
 </section>
+<div class="hat-back">
+    <h2>We lorem and Ipsum your aliquam.</h2>
+</div>
 
+	<div class="container365">
+		<div class="container">
+
+			<ul class="row">
+				<li class="col-md-3">
+					<p>365</p>
+					<h4>Lorem ipsum</h4>
+				</li>
+
+				<li class="col-md-3">
+					<p>98%</p>
+					<h4>Lorem ipsum</h4>
+				</li>
+
+				<li class="col-md-3">
+					<p>69</p>
+					<h4>Lorem ipsum</h4>
+				</li>
+
+				<li class="col-md-3">
+					<p>1.642</p>
+					<h4>Lorem ipsum</h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="container-blog" id="blog">
+		<div class="container" >
+
+			<div class="bxslider">
+				<div class="slide">
+			 		<div class="kolo kolo6"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Etiam augue enim, pellentesque vel mi in, vestibulum rhoncus arcu</p>
+					<h3>LESALE CHRISTOPER, PINTEREST</h3>
+				</div>
+				<div class="slide">
+			 		<div class="kolo kolo7"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Etiam augue enim, pellentesque vel mi in, vestibulum rhoncus arcu</p>
+					<h3>LESALE CHRISTOPER, PINTEREST</h3>
+				</div>
+				<div class="slide">
+			 		<div class="kolo kolo8"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Etiam augue enim, pellentesque vel mi in, vestibulum rhoncus arcu</p>
+					<h3>LESALE CHRISTOPER, PINTEREST</h3>
+				</div>
+				<div class="slide">
+			 		<div class="kolo kolo9"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Etiam augue enim, pellentesque vel mi in, vestibulum rhoncus arcu</p>
+					<h3>LESALE CHRISTOPER, PINTEREST</h3>
+
+				</div>
+				 <div class="slide">
+			 		<div class="kolo kolo10"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p>Etiam augue enim, pellentesque vel mi in, vestibulum rhoncus arcu</p>
+					<h3>LESALE CHRISTOPER, PINTEREST</h3>
+				</div>
+
+
+			</div>
+			</div>
+	</div>
+</div>
+
+	<div class="container" id="portfolio">
+		<div class="container-portfolio">
+      <div class="content-about-text" >
+          <h2>Our <small> portfolio</small></h2>
+      </div>
+			<div class="portfolio-buttons">
+			<a href="#" class="button-sec-9 " data="all-s9"> All</a>
+			<a href="#" class="button-sec-9" data="web-s9"> WEB</a>
+			<a href="#" class="button-sec-9" data="app-s9"> APPS</a>
+			<a href="#" class="button-sec-9" data="icon-s9"> ICONS</a>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 web-s9 all-s9">
+					<a href="#" class="plus">
+						<img src="img/img1.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+
+				<div class="col-md-4 col-sm-6 web-s9 all-s9">
+					<a href="#" class="plus">
+						<img src="img/img2.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+
+				<div class="col-md-4 col-sm-6 web-s9 all-s9">
+					<a href="#" class="plus">
+						<img src="img/img3.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+
+				<div class="col-md-4 col-sm-6 app-s9 all-s9" >
+					<a href="#" class="plus">
+						<img src="img/img4.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+
+				<div class="col-md-4 col-sm-6 app-s9 all-s9">
+					<a href="#" class="plus">
+						<img src="img/img5.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+
+				<div class="col-md-4 col-sm-6 icon-s9 all-s9">
+					<a href="#" class="plus">
+						<img src="img/img6.jpg">
+					</a>
+					<p>Neque Porro Quisquam</p>
+					<h3>apps,icons,ui</h3>
+				</div>
+			</div>
+
+      <div class="learn">
+          <a href="#">Watch more</a>
+      </div>
+		</div>
+	</div>
+
+
+	<div class="container"  id="kontakt">
+    <div class="content-about-text" >
+        <h2>Get <small>in Touch</small></h2>
+    </div>
+	</div>
+
+	<div class="container">
+		<div class="contact" >
+			<div class="left-box">
+				<input type="text" placeholder="Your Name" class="name">
+				<input type="email" placeholder="Your Email" class="email">
+				<textarea rows="10" cols="50" placeholder="Your Message"></textarea>
+			</div>
+
+			<div class="right-box" id="logo">
+			   	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum justo a purus tincidunt consequat. Donec maximus molestie iaculis. Morbi rutrum imperdiet mauris, ac fringilla justo laoreet at. Donec dictum lectus et lobortis semper. Se vehicula blandit purus, id tempus mi vehicula at. Proin vel facilisis metus. Sed eget lacus eget massa mattis euismod.
+			  	     </p>
+				      <br>
+				<h3>
+					1600 Pensylvania Ave NW, Washington,<br>
+					DC 20500, United States of America.<br><br>
+
+					T:(202) 456-1111
+					M:(202) 356-1212
+				</h3>
+				<div class="social-icons">
+
+						<a href="#" class="icon-1"></a>
+						<a href="#" class="icon-2"></a>
+						<a href="#" class="icon-3"></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="container button-email">
+    <div class="learn">
+        <a href="#">Send Email</a>
+    </div>
+	</div>
+
+
+	<div class="footer">
+		<img src="img/logo2.png">
+	</div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/slider/jquery.bxslider.min.js"></script>
 </body>
 </html>
