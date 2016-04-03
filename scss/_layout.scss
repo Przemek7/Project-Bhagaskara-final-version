@@ -662,23 +662,7 @@ nav{
   padding-bottom: 70px;
   text-align: center; }
 
-  .section-6{
-  	background:url('../img/section-bg.jpg')100% 100%;
-  	margin-top:100px;
-  	img{
-  		margin-top: 100px;
-  	}
-  	p{
-  		text-align: center;
-  		color: white;
-  		font-size: 30px;
-  		padding-bottom: 100px;
-  	}
-  	.row{
-  		text-align:center;
-  	}
 
-  }
   .container365 {
   	background-color:#DCDCDC;
   	text-align:center;
@@ -899,63 +883,6 @@ nav{
 
 
 
-    @media only screen and( max-width: 992px ){
-    	.button-email{
-    		text-align: center;
-    		padding-top:50px;
-    	}
-    	.social-icons{
-    		ul{
-    			margin:0;
-    			padding:0;
-    		}
-    	}
-    	.arrow-section4{
-    		text-align: center;
-    	}
-    	.team-slider{
-    		width: 350px;}
-    	.section1{
-    		li{
-    			display: inline-block;
-    		}
-    	}
-    	.section2{
-    		.button-container{
-    			text-align:center;
-    		}
-    		p{
-    			text-align: center;
-    			margin-bottom:10px;
-    		}
-    	}
-    	.main_container{
-    		font-size: 15px;
-    		img{
-    			width: 300px;
-    		}
-    	}
-    	nav {
-    		.hamburger{
-    			float: right;
-    		}
-    		ul{
-
-    			text-align: center;
-    			width: 100%;
-    		}
-    		li{
-    			display:block;
-    			border-bottom:1px solid black;
-
-    			width:300px;
-    			padding-bottom:10px;
-    			padding-top:10px;
-    			margin:0 auto;
-
-    		}
-    	}
-    }
 
     @media only screen and (min-width:992px){
     	.hamburger{
